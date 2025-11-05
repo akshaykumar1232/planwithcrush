@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+}
+
+.title{
+    font-size: 3rem;
+    margin: 6vh;
+    border: 7px dashed rgb(1, 17,160);
+    border-radius: 20px;
+    padding: 0px 90px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin:0 auto;
+}
+
+.card{
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgb(0,0,0,0.24) 0px 3px 8px;
+}
+
+.image{
+    width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tour-info{
+    margin: 20px 5px;
+}
+
+
+.tour-price{
+    color: #299857;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.tour-name,.ititi{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.read-more{
+    color: #12b0e8;
+    cursor: pointer;
+}
+
+.btn-red{
+    margin-top:18px ;
+    padding: 10px 70px;
+    border: 1px solid #b4161b;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #b4161b21;
+    
+}
+
+.btn-red:hover{
+    background: red;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.refresh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.btn-white{
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid rgb(156, 149, 149);
+    cursor: pointer;
+    background: red;
+    border-radius: 10px;
+}
+.btn-white:hover{
+    background: white;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s linear;
+}
+
+/* Responsive: Adjust card size and title on smaller screens */
+@media (max-width: 992px) {
+  .card {
+    width: 300px;
+  }
+  .image {
+    width: 280px;
+  }
+  .title {
+    font-size: 2.5rem;
+    padding: 0px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+  .image {
+    width: 100%;
+  }
+  .title {
+    font-size: 2rem;
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.8rem;
+    margin: 4vh;
+    padding: 0px 20px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-red, .btn-white {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+}
